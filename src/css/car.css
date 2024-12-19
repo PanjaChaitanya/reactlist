@@ -1,0 +1,140 @@
+.carMainContainer{
+    background-image: url('../../public/images/carbg.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 100vh;
+    color: white;
+}
+.carContainer{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+}
+.addListContainer{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+#carhead{
+    padding-top: 50px;
+    font-size: 35px;
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-shadow: 0px 0px 25px rgb(68, 182, 248);
+}
+#inputcar,#carRemoveInput{
+    border: 2px solid rgb(61, 145, 145);
+    padding: 5px;
+    width: 300px;
+    background-color: rgba(255, 255, 255, 0.623);
+    text-align: center;
+    box-shadow: 0px 0px 15px rgb(68, 182, 248);
+    border-radius: 7px;
+    font-weight: bold;
+}
+#inputcar:focus,#carRemoveInput:focus{
+    outline: none;
+}
+.carListContainer {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    li{
+        list-style: none;
+        font-weight: bold;
+        font-size: 20px;
+        color: rgb(255, 255, 255);
+        /* text-shadow: 0px 0px 15px rgb(68, 182, 248); */
+
+    }
+}
+.buttonContainer{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+#carDelBtn,#carSetBtn{
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+    border-radius: 10px;
+    border: none;
+    transition: transform .2s ease-in-out ;
+}
+#carDelBtn{
+    background-color: transparent;
+    border-radius: 50%;
+}
+#carSetBtn{
+    background-color: rgb(74, 206, 188);
+    padding: 5px 20px;
+}
+#carSetBtn:hover{
+    background-color: rgb(52, 247, 221);
+    box-shadow: 0px 0px 15px rgb(68, 182, 248);
+    transform: scale(1.05);
+}
+#carDelBtn:hover,#carRemoveBtn:hover{
+    transform: scale(1.15);
+}
+#carDelBtn:active,#carSetBtn:active{
+    transform: scale(0.95);
+    box-shadow: inset 0px 0px 15px rgba(0, 0, 0, 0.685);
+}
+#carRemoveBtn{
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    transition: transform .2s ease-in-out ;
+}
+.carRemovedItems{
+    h3{
+        color: rgba(243, 68, 37, 0.89);
+        padding: 10px 0px;
+    }
+    text-align: center;
+    p{
+        color: white;
+        text-shadow: 0px 0px 10px red;
+    }
+    p li{
+        list-style: none;
+        img{
+            cursor: pointer;
+            transition: transform .2s ease-in-out;
+        }
+        img:hover{
+            transform: scale(1.2);
+        }
+    }
+}
+.carRemovedListContainer{
+    border: 1px solid rgba(219, 26, 26, 0.493);
+    backdrop-filter: blur(20px);
+    border-radius: 20px;
+    background-color: rgba(83, 252, 252, 0.123);
+    padding: 10px;
+}
+@media only screen and (max-width: 768px) {
+  .carMainContainer{
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSK1ZLVUhU0gc_gXhZyNzYQwqZRsWahXNy_xOmO-1d1pp2EwNu6kR8fZmSj&s=10');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .bikeMainContainer{
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4wpCQxzM-sfYMSRJU0Wv3RAHgXbDar1J2ql5zR2OlEfa13werb700wfjp&s=10');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+}

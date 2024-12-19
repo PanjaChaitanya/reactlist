@@ -1,0 +1,126 @@
+.mobileMainContainer{
+    background-image: url('../../public/images/mobilebg.jpg');
+    background-repeat: no-repeat;
+    box-shadow: inset 0px 0px 25px rgb(0, 0, 0);
+    background-size: 100%;
+    height: 100vh;
+    color: white;
+}
+.mobileContainer{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+}
+.addListContainer{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+#mobilehead{
+    padding: 50px;
+    font-size: 35px;
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-shadow: 0px 0px 15px rgb(247, 21, 255);
+}
+#inputmobile,#mobileRemoveInput{
+    border: 1px solid rgb(171, 43, 175);
+    padding: 5px;
+    width: 300px;
+    background-color: rgba(255, 255, 255, 0.623);
+    text-align: center;
+    box-shadow: 0px 0px 15px rgba(247, 21, 255, 0.719);
+    border-radius: 10px;
+    font-weight: bold;
+}
+#inputmobile:focus,#mobileRemoveInput:focus{
+    outline: none;
+}
+.listContainer {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    li{
+        list-style: none;
+        font-weight: bold;
+        font-size: 20px;
+        /* text-shadow: 0px 0px 15px rgb(247, 21, 255); */
+
+    }
+}
+.buttonContainer{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+#mobileDelBtn,#mobileSetBtn{
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+    border-radius: 10px;
+    border: none;
+    transition: transform .2s ease-in-out ;
+}
+#mobileDelBtn{
+    background-color: transparent;
+    border-radius: 50%;
+}
+#mobileSetBtn{
+    background-color: rgb(141, 7, 146);
+    padding: 5px 20px;
+}
+#mobileSetBtn:hover{
+    background-color: rgb(247, 21, 255);
+    box-shadow: 0px 0px 15px rgb(247, 21, 255);
+    transform: scale(1.05);
+}
+#mobileDelBtn:hover,#mobileRemoveBtn:hover{
+    transform: scale(1.15);
+
+}
+#mobileDelBtn:active,#mobileSetBtn:active{
+    transform: scale(0.95);
+    box-shadow: inset 0px 0px 15px rgba(0, 0, 0, 0.685);
+}
+#mobileRemoveBtn{
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    transition: transform .2s ease-in-out ;
+}
+.mobileRemoveListContainer{
+    border: 1px solid rgb(140, 30, 167);
+    backdrop-filter: blur(20px);
+    border-radius: 20px;
+    padding: 10px;
+}
+.mobileRemovedItems{
+    h3{
+        color: rgb(98, 218, 255);
+        padding: 10px 0px;
+    }
+    text-align: center;
+    p{
+        color: white;
+        text-shadow: 0px 0px 10px rgba(255, 0, 212, 0.493);
+    }
+    p li{
+        list-style: none;
+        img{
+            cursor: pointer;
+            transition: transform .2s ease-in-out;
+        }
+        img:hover{
+            transform: scale(1.2);
+        }
+    }
+} 

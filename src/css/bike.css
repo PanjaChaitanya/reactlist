@@ -1,0 +1,122 @@
+.bikeMainContainer{
+    background-image: url('../../public/images/bikebg.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 100vh;
+    color: white;
+}
+.bikeContainer{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+}
+.addListContainer{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+#bikehead{
+    font-size: 35px;
+    padding-top: 50px;
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-shadow: 0px 0px 15px rgb(251, 255, 8);
+}
+#inputbike,#bikeRemoveInput{
+    border: 1px solid rgb(243, 247, 7);
+    padding: 5px;
+    width: 300px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.623);
+    box-shadow: 0px 0px 15px rgba(251, 255, 8, 0.678);
+    border-radius: 7px;
+    font-weight: bold;
+}
+#inputbike:focus,#bikeRemoveInput:focus{
+    outline: none;
+}
+.bikeListContainer {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    li{
+        list-style: none;
+        font-weight: bold;
+        font-size: 20px;
+        /* text-shadow: 0px 0px 15px rgb(251, 255, 8); */
+
+    }
+}
+.buttonContainer{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+#bikeDelBtn,#bikeSetBtn{
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+    border-radius: 10px;
+    border: none;
+    transition: transform .2s ease-in-out ;
+}
+#bikeDelBtn{
+    background-color: transparent;
+    border-radius: 50%;
+}
+#bikeSetBtn{
+    background-color: rgb(181, 184, 18);
+    padding: 5px 20px;
+}
+#bikeSetBtn:hover{
+    background-color: rgb(228, 231, 10);
+    box-shadow: 0px 0px 15px rgba(251, 255, 8, 0.822);
+    transform: scale(1.05);
+}
+#bikeDelBtn:hover,#bikeRemoveBtn:hover{
+    transform: scale(1.15);
+}
+#bikeDelBtn:active,#bikeSetBtn:active{
+    transform: scale(0.95);
+    box-shadow: inset 0px 0px 15px rgba(0, 0, 0, 0.685);
+}
+#bikeRemoveBtn{
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+}
+.bikeRemovedListContainer{
+    border: 1px solid rgb(30, 167, 167);
+    backdrop-filter: blur(20px);
+    border-radius: 20px;
+    padding: 10px;
+}
+.bikeRemovedItems{
+    h3{
+        color: rgb(251, 255, 0);
+        padding: 10px 0px;
+    }
+    text-align: center;
+    p{
+        color: white;
+        text-shadow: 0px 0px 10px red;
+    }
+    p li{
+        list-style: none;
+        img{
+            cursor: pointer;
+            transition: transform .2s ease-in-out;
+        }
+        img:hover{
+            transform: scale(1.2);
+        }
+    }
+}
